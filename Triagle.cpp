@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
@@ -26,10 +18,11 @@ main () {
 	}
 
 	std::ofstream outputFile("output.txt"); // M? file d?u ra
-	if (!outputFile.is_open()) { // Ki?m tra xem file có du?c m? thành công không
-		std::cerr << "Không th? m? file d?u ra!\n";
+	if (!outputFile.is_open()) { // Ki?m tra xem file cï¿½ du?c m? thï¿½nh cï¿½ng khï¿½ng
+		std::cerr << "Khï¿½ng th? m? file d?u ra!\n";
 		return 1;
 	}
+	
 	match = 0;
 	if (a == b)
 		match = match + 1;
